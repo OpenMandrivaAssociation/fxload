@@ -10,6 +10,8 @@ Group:		System/Kernel and hardware
 License:	GPL
 URL:		http://linux-hotplug.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
+# (tv) for asm/usb.h:
+Buildrequires: kernel-server-devel-latest
 Patch0:		fxload-2002_04_11-types.patch.bz2
 
 %description
