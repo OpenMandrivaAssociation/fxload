@@ -11,7 +11,6 @@ License:	GPL
 URL:		http://linux-hotplug.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		fxload-2002_04_11-types.patch.bz2
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 This package contains utilities for downloading firmware to EZ-USB devices.
