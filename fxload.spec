@@ -1,6 +1,6 @@
 %define name	fxload
 %define version	2002_04_11
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary:	EZ-USB utility program
 Name:		%name
@@ -10,9 +10,9 @@ Group:		System/Kernel and hardware
 License:	GPL
 URL:		http://linux-hotplug.sourceforge.net/
 Source:		%{name}-%{version}.tar.bz2
-# (tv) for asm/usb.h:
-Buildrequires: kernel-source-latest
 Patch0:		fxload-2002_04_11-types.patch.bz2
+# http://qa.mandriva.com/show_bug.cgi?id=36214
+Patch1:		fxload-2002_04_11-usb_header.patch
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
