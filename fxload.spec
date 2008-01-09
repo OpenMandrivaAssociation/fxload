@@ -33,6 +33,7 @@ for firmware development, I2C serial EEPROM.
 %prep
 %setup -q
 %patch0 -p1 -b .types
+%patch1 -p1 -b .usb_header
 
 %build
 %make
