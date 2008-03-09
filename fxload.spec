@@ -1,6 +1,6 @@
 %define name	fxload
 %define version	2002_04_11
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:	EZ-USB utility program
 Name:		%name
@@ -39,9 +39,11 @@ for firmware development, I2C serial EEPROM.
 %make
 
 %install
-rm -fr %buildroot
+rm -fr %{buildroot}
 %makeinstall
-mv %buildroot/usr/%_datadir/* %buildroot/%_datadir
+mv %{buildroot}/usr/%{_datadir}/* %{buildroot}/%{_datadir}
+mkdir -p %{buildroot}/sbin
+mv %{buildroot}%{_sbindir}/%{name} %{buildroot}/sbin/%{name}
 
 %clean
 rm -fr %buildroot
@@ -49,7 +51,7 @@ rm -fr %buildroot
 %files
 %defattr(-,root,root)
 %doc COPYING README.txt
-%_sbindir/fxload
-%_datadir/usb
-%_mandir/man8/*
+/sbin/fxload
+%{_datadir}/usb
+%{_mandir}/man8/*
 
