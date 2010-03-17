@@ -1,6 +1,6 @@
 %define name	fxload
 %define version	2002_04_11
-%define release %mkrel 10
+%define release %mkrel 11
 
 Summary:	EZ-USB utility program
 Name:		%name
