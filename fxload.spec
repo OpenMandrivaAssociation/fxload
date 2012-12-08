@@ -1,6 +1,6 @@
 %define name	fxload
 %define version	2002_04_11
-%define release %mkrel 13
+%define release %mkrel 15
 
 Summary:	EZ-USB utility program
 Name:		%name
@@ -55,3 +55,65 @@ rm -fr %buildroot
 %{_datadir}/usb
 %{_mandir}/man8/*
 
+
+
+%changelog
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 2002_04_11-13mdv2011.0
++ Revision: 664399
+- mass rebuild
+
+* Thu Dec 02 2010 Oden Eriksson <oeriksson@mandriva.com> 2002_04_11-12mdv2011.0
++ Revision: 605221
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 2002_04_11-11mdv2010.1
++ Revision: 522681
+- rebuilt for 2010.1
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 2002_04_11-10mdv2010.0
++ Revision: 424511
+- rebuild
+
+* Sat Mar 07 2009 Antoine Ginies <aginies@mandriva.com> 2002_04_11-9mdv2009.1
++ Revision: 351157
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 2002_04_11-8mdv2009.0
++ Revision: 221015
+- rebuild
+
+* Sun Mar 09 2008 Adam Williamson <awilliamson@mandriva.org> 2002_04_11-7mdv2008.1
++ Revision: 182740
+- move binary to /sbin (this seems to be the standard)
+
+* Wed Jan 09 2008 Herton Ronaldo Krzesinski <herton@mandriva.com.br> 2002_04_11-6mdv2008.1
++ Revision: 147248
+- Added patch fxload-2002_04_11-usb_header.patch, to address bug #36214.
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix kernel require
+    - BR kernel-server-devel-latest for asm/usb.h
+    - kill re-definition of %%buildroot on Pixel's request
+    - import fxload
+
+
+* Tue Mar 21 2006 Austin Acton <austin@mandriva.org> 2002_04_11-5mdk
+- mkrel
+
+* Sun Mar 19 2006 Pedro Lopez-Cabanillas <plcl@users.sourceforge.net> 2002_04_11-4mdk
+- Remove requirement of ezusbmidi. This program may be used to load
+  other firmware files, and it can be used with udev instead of hotplug.
+
+* Fri Sep  2 2005 Olivier Blin <oblin@mandriva.com> 2002_04_11-3mdk
+- require ezusbmidi instead of hotplug, because the hotplug script
+  is provided in ezusbmidi
+- Patch0: fix build by including <asm/types.h>
+
+* Mon Mar 01 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 2002_04_11-2mdk
+- Own dir
+
+* Tue Apr 22 2002 Austin Acton <aacton@yorku.ca> 2002_04_11-1mdk
+- initial package
