@@ -1,3 +1,5 @@
+%define _disable_lto 1
+
 Summary:	EZ-USB utility program
 Name:		fxload
 Version:	2002_04_11
