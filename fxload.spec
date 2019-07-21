@@ -2,15 +2,12 @@
 
 Summary:	EZ-USB utility program
 Name:		fxload
-Version:	2002_04_11
-Release:	26
+Version:	2008_10_13
+Release:	1
 Group:		System/Kernel and hardware
 License:	GPLv2
 Url:		http://linux-hotplug.sourceforge.net/
-Source0:	%{name}-%{version}.tar.bz2
-Patch0:		fxload-2002_04_11-types.patch.bz2
-# http://qa.mandriva.com/show_bug.cgi?id=36214
-Patch1:		fxload-2002_04_11-usb_header.patch
+Source0:	https://netcologne.dl.sourceforge.net/project/linux-hotplug/fxload/%{version}/%{name}-%{version}.tar.gz
 
 %description
 This package contains utilities for downloading firmware to EZ-USB devices.
