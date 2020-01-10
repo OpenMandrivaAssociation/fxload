@@ -26,7 +26,7 @@ for firmware development, I2C serial EEPROM.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make
