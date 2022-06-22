@@ -3,7 +3,7 @@
 Summary:	EZ-USB utility program
 Name:		fxload
 Version:	2008_10_13
-Release:	1
+Release:	2
 Group:		System/Kernel and hardware
 License:	GPLv2
 Url:		http://linux-hotplug.sourceforge.net/
