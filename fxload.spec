@@ -6,7 +6,7 @@ Version:	2008_10_13
 Release:	3
 Group:		System/Kernel and hardware
 License:	GPLv2
-Url:		http://linux-hotplug.sourceforge.net/
+Url:		https://linux-hotplug.sourceforge.net/
 Source0:	https://netcologne.dl.sourceforge.net/project/linux-hotplug/fxload/%{version}/%{name}-%{version}.tar.gz
 
 %description
